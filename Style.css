@@ -1,0 +1,291 @@
+/* Estilos del Carrusel */
+#hero-carousel {
+    margin-top: 0px; /* Ajusta el espacio para evitar que el navbar se solape */
+}
+
+/* Sección del Carrusel */
+#hero-carousel img {
+    width: 100%;
+    height: 600px; /* Define una altura fija */
+    object-fit: cover; /* Esto asegura que la imagen cubra todo el espacio sin distorsionarse */
+    object-position: center; /* Centra la imagen dentro de su contenedor */
+}
+
+@media (max-width: 768px) {
+    #hero-carousel img {
+        height: 40vh; /* Imágenes más pequeñas en pantallas móviles */
+    }
+}
+
+/* Estilos de los textos del carrusel para ambos modos */
+.carousel-caption h1, 
+.carousel-caption p {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+body.light-mode {
+    background-color: #ffffff; /* Fondo blanco para toda la página */
+    color: #000000; /* Letras en negro para contraste */
+}
+
+#navbar {
+    background-color: #ff0000; /* Color de fondo del navbar en modo claro *//* Color del navbar */
+    padding: 20px 20px; /* Ajusta el padding para bajar el navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-link {
+    color: white;
+    margin: 0 40px; /* Mayor separación */
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative; /* Cambiado de fixed a relative para evitar problemas de posicionamiento */
+    transition: color 0.3s;
+    padding-bottom: 10px; /* Ajusta para bajar las letras un poco más */
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+
+/* Modo Claro - Asegúrate de que el color de fondo y el texto sean correctos */
+body.light-mode {
+    background-color: #ffffff; /* Fondo blanco para toda la página */
+    color: #000000; /* Letras en negro */
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #141414; /* Color de fondo oscuro */
+    color: #d9d9d9; /* Texto claro */
+}
+
+.dark-mode .navbar {
+    background-color: #1a1a1a; /* Color del navbar oscuro */
+}
+
+/* Estilos para los botones en contenedores */
+.container .btn {
+    background-color: #ff0000; /* Color de fondo rojo para los botones en contenedores */
+    color: #ffffff; /* Texto blanco en los botones */
+    border: none; /* Sin borde en los botones */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover para los botones en contenedores */
+.container .btn:hover {
+    background-color: #d40000; /* Color rojo más oscuro al pasar el mouse */
+    color: #ffffff; /* Asegurarse de que el texto siga siendo blanco */
+}
+
+/* Si tienes botones de tipo outline en los contenedores */
+.container .btn-outline-light {
+    color: #ff0000; /* Color del texto en botones outline */
+    border: 2px solid #ff0000; /* Borde rojo para botones outline */
+}
+
+.container .btn-outline-light:hover {
+    background-color: rgba(255, 0, 0, 0.1); /* Fondo al pasar el mouse */
+    color: #ff0000; /* Texto rojo al pasar el mouse */
+}
+
+.card {
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    border: none; /* Sin borde en tarjetas */
+    transition: transform 0.5s; /* Animación de transformaciones */
+}
+
+.card h5, .card p {
+    color: #080000; /* Texto negro en las tarjetas */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de hover en tarjetas */
+}
+
+/* Modo Oscuro - Basado en colores deportivos de McLaren F1 2016 */
+body.dark-mode {
+    background-color: #141414; /* Color de fondo oscuro */
+    color: #d9d9d9; /* Texto claro */
+}
+
+
+
+.dark-mode .card {
+    background-color: #141414; /* Fondo gris oscuro de la tarjeta */
+}
+
+.dark-mode .card h5, 
+.dark-mode .card p {
+    color: whitesmoke; /* Texto rojo al pasar el mouse */
+     /* Color naranja de McLaren 2016 */
+}
+
+.dark-mode .card:hover {
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.5); /* Sombra en tono rojo */
+}
+
+/* Animaciones de aparición */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efecto de hover para las tarjetas de automóviles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Mueve la tarjeta ligeramente hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+body.dark-mode .card-title {
+    color: whitesmoke; /* Color de texto blanco en modo oscuro */
+}
+
+body.dark-mode .card-text {
+    color: whitesmoke; /* Color de texto blanco en modo oscuro */
+}
+
+/* Cuando el elemento está visible */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo para la sección de contacto */
+#contacto {
+    background-color: #f8f9fa; /* Fondo claro para destacar */
+    padding: 40px 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+/* Modo Oscuro para la sección de contacto */
+body.dark-mode #contact-container,
+body.dark-mode #contacto {
+    background-color: #141414; /* Fondo oscuro */
+    color: #ddd; /* Texto claro */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Opcionalmente, si tienes otros elementos dentro de contacto que también quieres ajustar */
+body.dark-mode #contact-container h2, 
+body.dark-mode #contact-container p {
+    color: #ddd; /* Texto claro para títulos y párrafos */
+}
+
+/* Zona de contacto */
+.contact-section, .contact-container {
+    background-color: #f5f5f5; /* Fondo claro en modo claro */
+    color: #333; /* Texto oscuro en modo claro */
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+/* Modo Oscuro - Zona de contacto y contenedor */
+body.dark-mode .contact-section, 
+body.dark-mode .contact-container {
+    background-color: #141414; /* Fondo negro en modo oscuro */
+    color: #f5f5f5; /* Texto claro en modo oscuro */
+}
+
+/* Estilos de los encabezados en la zona de contacto */
+.contact-section h2, .contact-container h2 {
+    color: #333; /* Encabezado en modo claro */
+}
+
+/* Encabezado en modo oscuro */
+body.dark-mode .contact-section h2, 
+body.dark-mode .contact-container h2 {
+    color: #fff; /* Encabezado en modo oscuro */
+}
+
+/* Párrafos en la zona de contacto */
+.contact-section p, .contact-container p {
+    color: #666; /* Texto en modo claro */
+}
+
+/* Texto de los párrafos en modo oscuro */
+body.dark-mode .contact-section p, 
+body.dark-mode .contact-container p {
+    color: #ddd; /* Texto claro en modo oscuro */
+}
+
+/* Enlaces en la zona de contacto */
+.contact-section a, .contact-container a {
+    color: #ff0000; /* Color de enlace en modo claro */
+}
+
+/* Enlaces en modo oscuro */
+body.dark-mode .contact-section a, 
+body.dark-mode .contact-container a {
+    color: #ffeb3b; /* Enlaces en amarillo en modo oscuro */
+}
+
+body.dark-mode .contact-section a:hover, 
+body.dark-mode .contact-container a:hover {
+    color: #ffd600; /* Color hover en modo oscuro */
+}
+
+
+
+
+/* Iframe de Google Maps */
+iframe {
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-right: 20px; /* Espacio entre iframe y redes sociales */
+}
+
+
+/* Estilo para la sección de redes sociales */
+
+
+.thank-you {
+    margin-top: 20px; /* Espacio entre el iframe y el texto de agradecimiento */
+    color: black; /* Color del texto */
+}
+
+.thank-you h3 {
+    font-size: 1.5rem; /* Tamaño del encabezado */
+    margin-bottom: 10px; /* Espacio debajo del encabezado */
+}
+
+.thank-you p {
+    font-size: 1rem; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    text-align: justify;
+    max-width: 600px;
+}
+
+

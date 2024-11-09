@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los modelos más recientes de automóviles de carreras de lujo.">
+    <meta name="keywords" content="automóviles, carreras, lujo, velocidad, tecnología">  
+    <meta name="author" content="Tu Nombre">
+    <title>Racetrack Experience</title>
+    <link rel="icon" href="Imagenes/Screenshot_2024-11-05_221229-removebg-preview.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff0000;">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="Index.html">
+                <img src="Imagenes/Screenshot_2024-11-05_224646-removebg-preview.png" alt="Logo" style="width: 100px; height: auto;">
+            </a>
+            
+            <!-- Botón de menú en dispositivos pequeños -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Elementos del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html" style="color: white;">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Automoviles.html" style="color: white;">Automóviles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pilotos.html" style="color: white;">Noticias</a>
+                    </li>
+                </ul>
+                
+                <!-- Botón de Modo Oscuro -->
+                <button id="dark-mode-toggle" class="btn btn-outline-light ms-3">Modo Oscuro</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel de imágenes -->
+    <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Imagenes/Bugatti-Chiron-07.jpg" class="d-block w-100" alt="Carrera 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Racetrack Experience</h1>
+                    <p>Pasión en Cada Curva, Potencia en Cada Página</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Imagenes/670e179521404600566636d2-ferrari-f80-photo-reveal-website-desk.avif" class="d-block w-100" alt="Carrera 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Innovación en velocidad</h1>
+                    <p>La ingeniería al servicio de la emoción.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Imagenes/cover_yt.png" class="d-block w-100" alt="Carrera 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>El futuro del automovilismo</h1>
+                    <p>Descubre los avances tecnológicos de nuestros modelos más recientes.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </section>
+
+    <!-- Sección de Modelos Destacados -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Modelos Destacados</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card fade-in">
+                    <img src="Imagenes/5d26fdb7c3f9ec0af6475619-01_fb_ppl_intro_lp3lhwq8.avif" class="card-img-top" alt="Ferrari">
+                    <div class="card-body">
+                        <h5 class="card-title">Ferrari F8 Tributo</h5>
+                        <p class="card-text">Un superdeportivo con una potencia de 720 CV y tecnología de vanguardia.</p>
+                        <a href="Automoviles.html" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card fade-in">
+                    <img src="Imagenes/2017-lamborghini-huracan-performante-first-drive.jpg" class="card-img-top" alt="Lamborghini">
+                    <div class="card-body">
+                        <h5 class="card-title">Lamborghini Huracán</h5>
+                        <p class="card-text">Diseño aerodinámico y rendimiento extremo para los amantes de la velocidad.</p>
+                        <a href="Automoviles.html" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card fade-in">
+                    <img src="Imagenes/th.jpeg" class="card-img-top" alt="McLaren">
+                    <div class="card-body">
+                        <h5 class="card-title">McLaren P1 GTR</h5>
+                        <p class="card-text">Ingeniería avanzada y velocidad superior, diseñado para competir.</p>
+                        <a href="Automoviles.html" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Categorías de Carreras -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Categorías de Carreras</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card fade-in">
+                    <img src="Imagenes/220041-italian-gp-saturday-gallery-1.jpg" class="card-img-top" alt="Fórmula 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Fórmula 1 (F1)</h5>
+                        <p class="card-text">La categoría reina del automovilismo, donde la velocidad y la tecnología se encuentran en circuitos de todo el mundo.</p>
+                        <a href="https://www.formula1.com/" class="btn btn-primary" target="_blank">Más sobre F1</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card fade-in">
+                    <img src="Imagenes/2300432-ferrari-lmh-wec-6h-monza-ffirst-row-scaled.jpg" class="card-img-top" alt="WEC">
+                    <div class="card-body">
+                        <h5 class="card-title">World Endurance Championship (WEC)</h5>
+                        <p class="card-text">Carreras de resistencia de larga duración donde se prueban al máximo tanto la fiabilidad como la velocidad de los automóviles.</p>
+                        <a href="https://www.fiawec.com/" class="btn btn-primary" target="_blank">Más sobre WEC</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card fade-in">
+                    <img src="Imagenes/ee276b2a0d66e7f241e470162dd7f570.jpg" class="card-img-top" alt="WRC">
+                    <div class="card-body">
+                        <h5 class="card-title">World Rally Championship (WRC)</h5>
+                        <p class="card-text">Competición de rally que se celebra en terrenos y condiciones extremas, desafiando tanto a los pilotos como a los vehículos.</p>
+                        <a href="https://www.wrc.com/" class="btn btn-primary" target="_blank">Más sobre WRC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contáctanos -->
+<!-- Sección Contáctanos -->
+<section id="contacto" class="mt-5">
+    <h2>Contáctanos</h2>
+    <p>Visítanos en nuestra revista o contáctanos por correo.</p>
+    
+    <div class="contact-container">
+        <!-- Iframe de Google Maps -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2763.695586059342!2d10.489688915617246!3d44.52305227910184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f7e9f03024c1b3%3A0x660df8cb0c063761!2sFerrari!5e0!3m2!1ses!2sco!4v1695015050821!5m2!1ses!2sco" 
+            width="1250" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+        
+        <div class="contact-section">
+            <h3>¡Gracias por tu interés!</h3>
+            <p>Gracias por leer nuestra revista. Aquí tenemos nuestra ubicación por si deseas visitarnos. Valoramos a los verdaderos fanáticos del motor.</p>
+            <p>También puedes enviarnos un correo electrónico directamente a: 
+                <a href="mailto:contacto@racetrack.com?subject=Consulta%20sobre%20la%20revista&body=Hola,%20me%20gustaría%20saber%20más%20información%20sobre...">contacto@racetrack.com</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Sección de Políticas de Privacidad -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Políticas de Privacidad</h2>
+        <p class="text-center">En Racetrack Experience, valoramos su privacidad. Recopilamos información personal que usted nos proporciona, como nombre y correo electrónico, así como datos sobre su navegación en nuestro sitio, para mejorar su experiencia y enviarle contenido relevante</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2024 Automóviles de Carreras. Todos los derechos reservados.</p>
+        <a href="https://www.facebook.com"  class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.twitter.com" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.instagram.com" class="text-white"><i class="bi bi-instagram"></i></a>
+    </footer>
+
+
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

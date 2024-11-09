@@ -1,0 +1,107 @@
+#navbar {
+    background-color: #ff0000; /* Color de fondo del navbar en modo claro *//* Color del navbar */
+    padding: 20px 20px; /* Ajusta el padding para bajar el navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-link {
+    color: white;
+    margin: 0 40px; /* Mayor separación */
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative; /* Cambiado de fixed a relative para evitar problemas de posicionamiento */
+    transition: color 0.3s;
+    padding-bottom: 10px; /* Ajusta para bajar las letras un poco más */
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link:hover {
+    color: #ffeb3b; /* Color hover */
+}
+
+/* Resalte de "Automoviles" */
+
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s, opacity 0.5s ease-in-out; /* Transición combinada */
+    opacity: 0; /* Comienza oculto */
+}
+
+.card.show {
+    opacity: 1; /* Se muestra completamente */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra clara */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color :#181818;
+}
+
+.card-text {
+    color: black;
+}
+.dark-mode.card-title{
+    color: #ddd;
+    
+}
+.dark-mode.card-text{
+    color: whitesmoke
+}
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #181818;
+    color: #fff;
+}
+
+body.dark-mode .card {
+    background-color: #282828;
+    color: #fff;
+}
+
+body.dark-mode #navbar {
+    background-color: #ff0000; /* Color de fondo del navbar en modo claro *//* Color del navbar */
+    
+}
+
+body.dark-mode .nav-link {
+    color: #ddd;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #fff;
+}
+
+body.dark-mode .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.7); /* Sombra roja en modo oscuro */
+}
+
